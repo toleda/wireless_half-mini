@@ -12,19 +12,17 @@ Airport Kext Enablers
 1. bcm4352.kext - enables Airport WiFi and BT on installed BCM94352/AE-CE123H WiFi Card
 1a. Airport 802.11 ac/a/b/g/n dual band WiFi
 1b. BT 4.0 dual mode with Low Energy Technology
-<<<<<<< HEAD
 
-2. bcm4352t.kext - enables BT on installed BCM94352 WiFi Card
+2. bcm4352bt.kext - enables BT on installed BCM94352 WiFi Card
 2a. Use dsdt/ssdt to enable WiFi
 2b. BT 4.0 dual mode with Low Energy Technology
 
 3. toledaARPT.kext - enables Airport WiFi with the specified Non-Native Airport PCIe Half Mini cards, see [Guide] airport_pcie-hm_details.pdf
 2a. BCM943224 HMS - 2.4/5 GHz, bgn, 2 stream, 300 Mbs
 2b. BCM943225 HMB - 2.4 GHz, bgn, 2 stream, 108 Mbs + BT (3.0)
-2c. BCM94352 HMB - 2.4/5 GHz, ac+abgn, 2 stream, 867 Mbs + BT (4.0)
-2d. AR9285 - 2.4 GHz, abgn, 1 stream, 150 Mbs
-2e. AR9287 - 2.4 GHz, abgn, 2 stream, 300 Mbs
-2f. BT - Broadcom default
+2c. AR9285 - 2.4 GHz, abgn, 1 stream, 150 Mbs
+2d. AR9287 - 2.4 GHz, abgn, 2 stream, 300 Mbs
+2e. BT - Broadcom default
 
 Downloads (select one)
 1. Select bcm4352.kext.zip/View Raw
