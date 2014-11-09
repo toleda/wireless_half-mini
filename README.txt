@@ -44,15 +44,15 @@ BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Skvo, Dokterdok
    1. Download (View Raw) wireless_bcm94352-100_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-100_patch.command
 2. Clover patch
-   1. Download (View Raw) config-bcrm4352-100.plist.zip
-   2. Add 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
+   1. Download (View Raw) config-bcm94352-100.plist.zip
+   2. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
 BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
 1. Kext/binary patch
    1. Download (View Raw) wireless_bcm94352-90_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-90_patch.command
 2. Clover patch
-   1. Download (View Raw) config-bcrm4352-90.plist.zip
+   1. Download (View Raw) config-bcm94352-90.plist.zip
    2. Add 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 3. wireless_half-mini-brcm4360-90_patch.command deprecated
 
