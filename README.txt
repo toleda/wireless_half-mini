@@ -2,7 +2,9 @@ wireless_half-mini
 ============
 OS X Airport Half Mini (WiFi and Bluetooth)
 
-Update 11/19/2014 Yosemite Release/BCM94352 5GHz/Handoff
+Updates
+11/16/2014 BCM94352/US-FCC patch, Credit: AGuyWhoIsBored
+11/12/2014 Yosemite Release/BCM94352 5GHz/Handoff
 
 Airport working OOB on Mavericks with Broadcom BCM94360/BCM94331/BCM943224 and Atheros AR9280   OS X reports as Airport Extreme; Wake on Wireless and AirDrop supported.  Newer Broadcom WiFi cards no longer require rebranding to work in OS X.
 
@@ -39,7 +41,7 @@ Note: The Asus Superfast 802.11ac (Z87 Pro & Deluxe motherboards) is BCM4352
 3. For any working WiFi without BT; 4.0, wake, low energy, native - suggest:
 http://www.gmyle.com/products/micro-usb-bluetooth-4-0-dongle-dual-mode-w-low-energy-technology-wireless-adapter-broadcom-bcm20702-chipset-x10
 
-BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Skvo, Dokterdok
+BCM94352 5 GHz/Handoff Patch (10.10 and newer) Credit: Skvo, Dokterdok, AGuyWhoIsBored
 1. Kext/binary patch
    1. Download (View Raw) wireless_bcm94352-100_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-100_patch.command
