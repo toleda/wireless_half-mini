@@ -3,7 +3,7 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
-11/16/2014 BCM94352/US-FCC patch, Credit: AGuyWhoIsBored
+11/16/2014 BCM94352/US-FCC patch, Credit: webcivilian
 11/12/2014 Yosemite Release/BCM94352 5GHz/Handoff
 
 Airport working OOB on Mavericks with Broadcom BCM94360/BCM94331/BCM943224 and Atheros AR9280   OS X reports as Airport Extreme; Wake on Wireless and AirDrop supported.  Newer Broadcom WiFi cards no longer require rebranding to work in OS X.
@@ -91,6 +91,7 @@ PikeRAlpha
 EMlyDinEsH
 Skvo
 Dokterdok
+webcivilian
 
 toleda
 https://github.com/toleda/airport_half_mini
