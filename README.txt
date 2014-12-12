@@ -3,6 +3,8 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
+12/9/2014 New Broadcomm Bluetooth 4.0 solution, see BCM94352 BT4
+11/19/2014 GYMLE BT4LE/Handoff
 11/16/2014 BCM94352/US-FCC patch, Credit: webcivilian
 11/12/2014 Yosemite Release/BCM94352 5GHz/Handoff
 
@@ -41,7 +43,7 @@ Note: The Asus Superfast 802.11ac (Z87 Pro & Deluxe motherboards) is BCM4352
 3. For any working WiFi without BT; 4.0, wake, low energy, native - suggest:
 http://www.gmyle.com/products/micro-usb-bluetooth-4-0-dongle-dual-mode-w-low-energy-technology-wireless-adapter-broadcom-bcm20702-chipset-x10
 
-BCM94352 5 GHz/Handoff Patch (10.10 and newer) Credit: Skvo, Dokterdok, AGuyWhoIsBored
+BCM94352 5 GHz/Handoff Patch (10.10 and newer) Credit: Skvo, Dokterdok, webcivilian
 1. Kext/binary patch
    1. Download (View Raw) wireless_bcm94352-100_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-100_patch.command
@@ -57,6 +59,10 @@ BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
    1. Download (View Raw) config-bcm94352-90.plist.zip
    2. Add 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 3. wireless_half-mini-brcm4360-90_patch.command deprecated
+
+BCM94352 BT4 (10.10 and newer, 10.9 and newer), either choice, not both
+1. https://github.com/robvanoostenrijk/BrcmPatchRAM/releases
+2. http://forum.osxlatitude.com/index.php?/topic/2925-bluetooth-firmware-uploader/
 
 Airport Injection Methods
 1. kext enabler, see airport_kext_enabler/README.txt
