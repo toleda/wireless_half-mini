@@ -23,8 +23,8 @@ Airport Half Mini Guides:
 3. [Guide]_airport_half-mini_plist_edits.pdf.zip
 
 Native Airport Half Mini cards.
-1. BCM94360 - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs  (PCIe x1, not HM at this time)
-2. BCM94331 HMB - 2.4/5 GHz, abgn, 3 stream, 450 Mbs + BT (4.0) 10.10+/Whitelist
+1. BCM94360CD - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs  (PCIe x1, not HM)
+2. BCM94331CD - 2.4/5 GHz, abgn, 3 stream, 450 Mbs + BT (4.0) 10.10+/Whitelist
 3. BCM943224 HMS - 2.4/5, GHz abgn, 2 stream, 150/300 Mbs 10.10+/Whitelist
 4. AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
 5. AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
