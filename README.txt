@@ -3,6 +3,7 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
+2/12/2015 10.10.2 Update; added 1. BCM94360HMB, 2. wireless_bcm94352-100-v2.0.command and 3. config-bcm94352-102.plist. wireless_bcm94352-100_patch.command deprecated
 12/9/2014 New Broadcomm Bluetooth 4.0 solution, see BCM94352 BT4
 11/19/2014 GYMLE BT4LE/Handoff
 11/16/2014 BCM94352/US-FCC patch, Credit: webcivilian
@@ -23,32 +24,34 @@ Airport Half Mini Guides:
 3. [Guide]_airport_half-mini_plist_edits.pdf.zip
 
 Native Airport Half Mini cards.
-1. BCM94360CD - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs  (PCIe x1, not HM)
-2. BCM94331CD - 2.4/5 GHz, abgn, 3 stream, 450 Mbs + BT (4.0) 10.10+/Whitelist
-3. BCM943224 HMS - 2.4/5, GHz abgn, 2 stream, 150/300 Mbs 10.10+/Whitelist
-4. AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
-5. AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
+1. BCM94360HMB - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs
+2. BCM94360CD - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs  (PCIe x1, not HM)
+3. BCM94331CD - 2.4/5 GHz, abgn, 3 stream, 450 Mbs + BT (4.0) 10.10+/Whitelist
+4. BCM943224 HMS/HMB - 2.4/5, GHz abgn, 2 stream, 150/300 Mbs 10.10+/Whitelist
+5. AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
+6. AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
 
 Non-Native Airport Half Mini cards, see [Guide] airport_half_mini_details.pdf
-1. BCM943225 HMS - 2.4 GHz, bgn, 2 stream, 108/150 Mbs
-2. BCM943225 HMB - 2.4 GHz, bgn, 2 stream, 108/150 Mbs + BT (3.0)
-3. BCM94352 HMB - 2.4/5 GHz, ac+abgn, 2 stream, 867 Mbs + BT (4.0)
+1. BCM94352 HMB - 2.4/5 GHz, ac+abgn, 2 stream, 867 Mbs + BT (4.0)
+2. BCM943225 HMS - 2.4 GHz, bgn, 2 stream, 108/150 Mbs
+3. BCM943225 HMB - 2.4 GHz, bgn, 2 stream, 108/150 Mbs + BT (3.0)
 4. AR9285 - 2.4 GHz, abgn, 1 stream, 54/75 Mbs
 5. AR9287 - 2.4 GHz, abgn, 2 stream, 108/150 Mbs
 
 WiFi + BT
 1. BCM943352 HMB/AzureWave AW-CE123H supports both Airport and Bluetooth 4.0
-Note: The Asus Superfast 802.11ac (Z87 Pro & Deluxe motherboards) is BCM4352
 2. BCM943225 HMB supports both Airport and Bluetooth 3.0
 3. For any working WiFi without BT; 4.0, wake, low energy, native - suggest:
 http://www.gmyle.com/products/micro-usb-bluetooth-4-0-dongle-dual-mode-w-low-energy-technology-wireless-adapter-broadcom-bcm20702-chipset-x10
 
 BCM94352 5 GHz/Handoff Patch (10.10 and newer) Credit: Skvo, Dokterdok, webcivilian
 1. Kext/binary patch
-   1. Download (View Raw) wireless_bcm94352-100_patch.command.zip
-   2. Double click Downloads/wireless_bcm94352-100_patch.command
+   1. Download (View Raw)  wireless_bcm94352-100-v2.0.command.zip
+   2. Double click Downloads/ wireless_bcm94352-100-v2.0.command
 2. Clover patch
-   1. Download (View Raw) config-bcm94352-100.plist.zip
+   1. Download (View Raw)
+	1. 10.10.2 and newer, config-bcm94352-102.plist.zip
+	2. 10.10 and 10,10.1. config-bcm94352-100.plist.zip
    2. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
 BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
@@ -62,7 +65,6 @@ BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
 
 BCM94352 BT4 (10.10 and newer, 10.9 and newer), either choice, not both
 1. https://github.com/robvanoostenrijk/BrcmPatchRAM/releases
-2. http://forum.osxlatitude.com/index.php?/topic/2925-bluetooth-firmware-uploader/
 
 Airport Injection Methods
 1. kext enabler, see airport_kext_enabler/README.txt
@@ -94,10 +96,13 @@ Credit
 THe KiNG 
 Andy Vandijck
 PikeRAlpha
-EMlyDinEsH
 Skvo
 Dokterdok
 webcivilian
+AREOS
+the-darkvoid
+Machanical
+sefki21
 
 toleda
 https://github.com/toleda/airport_half_mini
