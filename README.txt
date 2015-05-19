@@ -3,7 +3,11 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
-2/12/2015 10.10.2 Update; added 1. BCM94360HMB, 2. wireless_bcm94352-100-v2.0.command and 3. config-bcm94352-102.plist. wireless_bcm94352-100_patch.command deprecated
+5/19/2015 - 10.10.3 Update: added 1. wireless_bcm94352-100-v3.0.command, 
+   2. config-bcm94352-103.plist 3. Country Code support, credit: Sebinouse and 
+   4. Deprecated Folder. Removed Country Code/XT support
+2/12/2015 10.10.2 Update; added 1. BCM94360HMB, 2. wireless_bcm94352-100-v2.0.command
+   and 3. config-bcm94352-102.plist. wireless_bcm94352-100_patch.command deprecated
 12/9/2014 New Broadcomm Bluetooth 4.0 solution, see BCM94352 BT4
 11/19/2014 GYMLE BT4LE/Handoff
 11/16/2014 BCM94352/US-FCC patch, Credit: webcivilian
@@ -44,20 +48,20 @@ WiFi + BT
 3. For any working WiFi without BT; 4.0, wake, low energy, native - suggest:
 http://www.gmyle.com/products/micro-usb-bluetooth-4-0-dongle-dual-mode-w-low-energy-technology-wireless-adapter-broadcom-bcm20702-chipset-x10
 
-BCM94352 5 GHz/Handoff Patch (10.10 and newer) Credit: Skvo, Dokterdok, webcivilian
+BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Dokterdok, the-darkvoid, Sebinouse
 1. Kext/binary patch
-   1. Download (View Raw)  wireless_bcm94352-100-v2.0.command.zip
-   2. Double click Downloads/ wireless_bcm94352-100-v2.0.command
+   1. Download (View Raw)  wireless_bcm94352-100-v3.0.command.zip
+   2. Double click Downloads/ wireless_bcm94352-100-v3.0.command
 2. Clover patch
    1. Download (View Raw)
-	1. 10.10.2 and newer, config-bcm94352-102.plist.zip
-	2. 10.10 and 10,10.1. config-bcm94352-100.plist.zip
+	1. 10.10.and newer, config-bcm94352-103.plist.zip
    2. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
 BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
 1. Kext/binary patch
    1. Download (View Raw) wireless_bcm94352-90_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-90_patch.command
+   3. See Terminal Saved Output. . . (above)
 2. Clover patch
    1. Download (View Raw) config-bcm94352-90.plist.zip
    2. Add 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
@@ -98,11 +102,8 @@ Andy Vandijck
 PikeRAlpha
 Skvo
 Dokterdok
-webcivilian
-AREOS
 the-darkvoid
-Machanical
-sefki21
+Sebinouse
 
 toleda
 https://github.com/toleda/airport_half_mini

@@ -1,0 +1,31 @@
+Last login: Tue May 19 00:32:30 on console
+. . . Downloads/wireless_bcm94352-100-v3.0.command ; exit;
+
+wireless_bcm94352-100.command_v3.0
+Verify boot flag/argument: kext-dev-mode=1
+ 
+Patch Options:
+1 - Handoff only
+2 - Handoff/BCM94352/US-FCC
+3 - Handoff/BCM94352/Country Code
+Select Patch (1, 2 or 3): 3
+Note, script does not validate WiFi Country Code; XT is not a County Code
+Enter Country Code (i.e., DE, FR, GB, etc.): fr
+Password:
+ 
+Copy S/L/E/IOBluetoothFamily.kext to Desktop/IOBluetoothFamily-10.10.3.kext
+Copy S/L/E/IO80211Family.kext to Desktop/IO80211Family-10.10.3.kext
+Fix permissions ...
+Rebuild kernel cache...
+ 
+rebuilding //System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
+kext-dev-mode allowing invalid signature -67061 0xFFFFFFFFFFFEFA0B for kext IOBluetoothFamily.kext
+kext-dev-mode allowing invalid signature -67061 0xFFFFFFFFFFFEFA0B for kext AirPortBrcm4360.kext
+kext-dev-mode allowing invalid signature -67054 0xFFFFFFFFFFFEFA12 for kext AppleHDA.kext
+ 
+To save a copy of this Terminal session: Terminal/Shell/Export Text As ...
+Finished, restart required.
+logout
+
+[Process completed]
+
