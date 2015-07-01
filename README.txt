@@ -3,6 +3,7 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
+7/1/2015 - 10.10.4 Update: wireless_bcm94352-100.command, supports all 10.10 versions
 5/19/2015 - 10.10.3 Update: added 1. wireless_bcm94352-100-v3.0.command, 
    2. config-bcm94352-103.plist 3. Country Code support, credit: Sebinouse and 
    4. Deprecated Folder. Removed Country Code/XT support
