@@ -52,7 +52,7 @@ WiFi + BT
 3. For any working WiFi without BT; 4.0, wake, low energy, native - suggest:
 http://www.gmyle.com/products/micro-usb-bluetooth-4-0-dongle-dual-mode-w-low-energy-technology-wireless-adapter-broadcom-bcm20702-chipset-x10
 
-BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Dokterdok, the-darkvoid, Sebinouse
+BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Dokterdok, the-darkvoid, Sebinouse (1 or 2, not both)
 1. Kext/binary patch
    1. Download (View Raw)  wireless_bcm94352-100-v3.0.command.zip
    2. Double click Downloads/ wireless_bcm94352-100-v3.0.command
@@ -61,7 +61,7 @@ BCM94352 5 GHz/Handoff Patch (10.10 and newer) - Credit: Dokterdok, the-darkvoid
 	1. 10.10.and newer, config-bcm94352-103.plist.zip
    2. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
-BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo
+BCM94352 5 GHz Patch (10.9 and newer) - Credit: Skvo (1 or 2, not both)
 1. Kext/binary patch
    1. Download (View Raw) wireless_bcm94352-90_patch.command.zip
    2. Double click Downloads/wireless_bcm94352-90_patch.command
