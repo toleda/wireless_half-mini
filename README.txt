@@ -3,6 +3,7 @@ wireless_half-mini
 OS X Airport Half Mini (WiFi and Bluetooth)
 
 Updates
+10/7/15 - toledaARPY deprecated
 7/23/2015 - 10.11 Update, initial support, 1. wireless_bcm94352-110.command and 
    2. config-bcm94352-110.plist
 7/1/2015 - 10.10.4 Update: wireless_bcm94352-100.command, supports all 10.10 versions
