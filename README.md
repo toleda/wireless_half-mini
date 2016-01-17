@@ -74,6 +74,8 @@ Select 1 or 2, not both
 		1. CC prompt
 	2. config-bcm94352...plist
 		1. edit 5GHz-US/Replace/55 53 (US) to xx xx (CC)
+		2. ASCII to Hex, see ASCII to Hex
+			1.	Hex to Base64 (TextEdit/plist)
 
 **BCM94352 5 GHz/Handoff Patch (10.11+)**  
 Credit: Dokterdok, the-darkvoid, Sebinouse  
@@ -119,7 +121,7 @@ Select 1 or 2, not both
 	3. Install 2 kexts
 		1.	BrcmFirmwareRepo.kext
 		2.	BrcmPatchRAM2.kext
-3.	Installation (1 or 2, not both)
+3.	Installation (a or b, not both)
 	1.	Clover/Chameleon - use kext installer
 		1.	System/Library/Extensions/
 		2.	Library/Extensions/
@@ -132,40 +134,76 @@ Select 1 or 2, not both
 1. REAMDME [BrcmPatchRAM -- RehabMan](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
 2. Download [BrcmPatchRAM -- RehabMan](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads)
 3.	BrcmPatchRAM.kext Installation (Select one method)
-	1.	Chameleon - System/Library/Extensions/
+	1.	Clover/Chameleon - System/Library/Extensions/
 		1.	use kext installer
-	2.	Clover - EFI/CLOVER/kexts/10.10 or /10.19
+	2.	Clover - EFI/CLOVER/kexts/10.10 or /10.9
 4.	Working
 	1.	Asus BCM94352 (0b05/17cf)
 	2.	Azurewave CE-123H (13d3/3404
 
-**OS X Version**
+**Requirement** (+ all)
 
-1. 10.11+
-2. 10.10+
-3. 10.9+
-4. 10.8.5 or newer (Solution does not work in 10.8.4 or earlier) 
+1.  OS X Versions (+ all)
+    1.  10.11+/El Capitan 
+    2.  10.10+/Yosemite
+    3.  10.9+/Mavericks
+    4.  10.8.5/Mountain Lion  
+    Solution does not work, 10.8.4 or earlier
+2. Boot Flags/Boot failure may result if ignored
+	1. 10.11+/Disable SIP/set, restart, install, enable SIP, restart
+		1. CLOVER/config.plist/RtVariables/
+			1. BooterConfig/0x28
+			2. CsrActiveConfig/0x3
+		2. Chameleon - Extra/org.chameleon.Boot.plist
+			1. CsrActiveConfig=3
+	2. 10.10+/Allow unsigned kexts/set, restart, install
+		1. Clover/config.plist/
+			1. Boot/Arguments/kext-dev-mode=1
+		2. Chameleon/Extra/org.chameleon.Boot.plist/
+			1. Kernel Flags/kext-dev-mode=1
 
 **Installation/Configuration/Troubleshooting**  
 [Guide] airport_half-mini_details.pdf.zip (above)
+
+**Tools**
+
+1. [IOReg_v2.1](https://github.com/toleda/audio_ALCInjection/blob/master/IORegistryExplorer_v2.1.zip) (select View Raw)
+2. [DPCIManger](http://sourceforge.net/projects/dpcimanager/)  
+3. [MaciASL](http://sourceforge.net/projects/maciasl/)
+4. Property List Editors -
+	1. [Xcode](https://developer.apple.com/xcode/)  
+	2. Property List Editor, PlistEdit Pro, TextEdit, etc.
+	3. TextEdit, TextWrangler (last resort)
+5. [Clover Configurator](http://www.osx86.net/files/file/49-clover-configurator/)
+6. [Clover Wiki](http://clover-wiki.zetam.org/Home)
 
 **Problem Reporting** (attach requested information)
 
 1. Description of wireless problem
 2. OS X version/motherboard model/BIOS version/processor/graphics
-3. Copy of IOReg - IOReg_v2.1/File/Save a Copy As…, verify file (not
-   ioreg.txt)
-4. Extra/org.chameleon.Boot.plist or EFI/Clover/config.plist
-5. Extra/dsdt.aml or EFI/Clover/ACPI/Patched/dsdt.aml (if installed)
-6. Extra/dsdt.aml or EFI/Clover/ACPI/Patched/ssdt.aml (if installed)
-7. Console/All Messages/kernel bcn/ath messages selected/Save
-   Selection As…..
-8. WiFi: Screenshot of System Information/Hardware/Network and WiFi
-9. Bluetooth: Screenshot of System Information/Hardware/Bluetooth and 
-   USB/Bluetooth USB Host Controller
-Post to:
-1. http://www.tonymacx86.com/network/104850-guide-airport-pcie-half-mini-v2.html
-2. http://www.insanelymac.com/forum/topic/292542-airport-pcie-half-mini/
+3. Procedure/Guide used
+4. Copy of IOReg - IOReg_v2.1/File/Save a Copy As…, verify file (Tools 1.)
+5.	Screenshots:
+	1. DPCIManager/Status (Tools 2.)
+	2. System Information/Hardware/Network/WiFi
+	3. System Information/Hardware/Bluetooth
+	4. System Information/Hardware/USB (Select Bluetooth 	device)
+6.	DPCIManager/Misc/Boot Log
+7.	MaciASL/File/Export Tableset As... (Tools 3.)
+8.	Terminal/Shell/File/Export Text As. . . /wireless_bcm...command
+9.	Chameleon
+	1.	Extra/org.chameleon.Boot.plist
+	2.	DPCIManager/Misc/Boot Log
+	3.	Extra/dsdt.aml (if installed)
+	4.	Extra/ssdt.aml (if installed)
+10.	Clover
+	1.	EFI/CLOVER/config.plist
+	2.	DPCIManager/Misc/Boot Log
+	3.	EFI/CLOVER/ACPI/Patched/dsdt.aml (if installed)
+	4.	EFI/CLOVER/ACPI/Patched/ssdt.aml (if installed)
+11.	Post to:
+	1.	[Airport - InsanelyMac.com](http://www.insanelymac.com/forum/topic/292542-airport-pcie-half-mini/)
+	2. [Airport - tonymacx86.com](http://www.tonymacx86.com/network/104850-guide-airport-pcie-half-mini-v2.html)
 
 Credit  
 THe KiNG   
