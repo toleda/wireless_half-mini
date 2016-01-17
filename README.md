@@ -60,7 +60,7 @@ Select one method
 2.	kext edit/Info.plist, see [Guide] airport_pcie-hm_plist_edits.pdf above
 3.	dsdt edits, [Guide] airport_pcie-hm_dsdt_edits.pdf above
 4.	ssdt enabler, see airport_ssdt_enabler folder above
-5.	Clover/config.plist/ (Select one method)
+5.	Clover/config.plist/ (Select 1/i or 2/ii, not both)
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YESFixAirport_4000/YES
 		2.	FixAirport_4000/YES
@@ -69,13 +69,12 @@ Select one method
 **BCM94352 Country Code**  
 Select 1 or 2, not both
 
-1. ROW [WiFi Country Code Credit: Sebinouse](http://www.tonymacx86.com/network/104850-guide-airport-pcie-half-mini-v2-117.html#post1027194)
+1. ROW [WiFi Country Code](http://www.tonymacx86.com/network/104850-guide-airport-pcie-half-mini-v2-117.html#post1027194) Credit: Sebinouse
 	1. wireless_bcm94352...command
 		1. CC prompt
 	2. config-bcm94352...plist
 		1. edit 5GHz-US/Replace/55 53 (US) to xx xx (CC)
-		2. ASCII to Hex, see ASCII to Hex
-			1.	Hex to Base64 (TextEdit/plist)
+		2. [ASCII/Hex/Base64](http://www.asciitohex.com)
 
 **BCM94352 5 GHz/Handoff Patch (10.11+)**  
 Credit: Dokterdok, the-darkvoid, Sebinouse  
@@ -84,7 +83,7 @@ Select 1 or 2, not both
 1. Kext/binary patch
    1. Download [wireless_bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/wireless_bcm94352-110-v4.0.command.zip) (select View Raw)
    2. Double click Downloads/wireless_bcm94352-...command
-2. Clover patch
+2. Clover/kext patch
    1. Download [config-bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/config-bcm94352-110.plist.zip) (select View Raw)
 	1. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
@@ -95,7 +94,7 @@ Select 1 or 2, not both
 1. Kext/binary patch
    1. Download [wireless_bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/wireless_bcm94352-100.command.zip) (select View Raw)
    2. Double click Downloads/wireless_bcm94352-...command
-2. Clover patch
+2. Clover/kext patch
    1. Download [config-bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/config-bcm94352-103.plist.zip) (select View Raw)
 	1. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
@@ -107,7 +106,7 @@ Select 1 or 2, not both
 	1. Download [wireless_bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/wireless_bcm94352-90_patch.command.zip) (select View Raw)
    2. Double click Downloads/wireless_bcm94352-...command
    3. See Terminal Saved Output. . . (above)
-2. Clover patch
+2. Clover/kext patch
    1. Download [config-bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/config-bcm94352-103.plist.zip) (select View Raw)
    2. Add 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
 
