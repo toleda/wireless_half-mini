@@ -4,7 +4,9 @@
 
 **Updates**
 
-1. 10/7/15 - toledaARPT deprecated  
+1. 10/26/16 - 10.12 Support, add
+	1. 	config-bcm94352-120.plist
+2. 10/7/15 - toledaARPT deprecated
 2. 7/23/15 - 10.11 Update, adds
 	1. wireless-bcm94352-110.command  
 	2. config-bcm94352-110.plist  
