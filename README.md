@@ -61,7 +61,7 @@ Select one method
 	2. Download [FakePCIID -- RehabMan](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads)
 2.	kext edit/Info.plist, see [Guide] airport_pcie-hm_plist_edits.pdf above
 3.	dsdt edits, [Guide] airport_pcie-hm_dsdt_edits.pdf above
-4.	ssdt enabler, see airport_ssdt_enabler folder above
+4.	ssdt enabler, see ssdt_arpt folder above
 5.	Clover/config.plist/ (Select 1/i or 2/ii, not both)
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YESFixAirport_4000/YES
