@@ -68,15 +68,19 @@ Select one method
 		2.	FixAirport_4000/YES
 	2.	Devices/FakeID/0x43a014e4 (supported device_ids) 
 
-**BCM94352 Country Code**  
-Select 1 or 2, not both
+**Country Code**  (10.12/10.11/10.10 - all versions) 
 
-1. ROW [WiFi Country Code](http://www.tonymacx86.com/network/104850-guide-airport-pcie-half-mini-v2-117.html#post1027194) Credit: Sebinouse
-	1. wireless_bcm94352...command
-		1. CC prompt
-	2. config-bcm94352...plist
+1. Country Code/Required
+	2. 	Native: US/FCC (Hex: 55 53)
+	2.	If not US/FCC, see Sebinouse, see #2 below
+	3.	Special case, see [#a](https://www.tonymacx86.com/threads/guide-airport-pcie-half-mini-v2.104850/page-209), credit: jaymonkey, Post #2084
+		1. Solves wake from sleep WiFi performance issue
+3. ROW [Country Code](https://www.tonymacx86.com/threads/guide-airport-pcie-half-mini-v2.104850/page-209), credit: Sebinouse, Post #1159 (select one method)
+	1. config-bcm94352...plist (see Repo)
 		1. edit 5GHz-US/Replace/55 53 (US) to xx xx (CC)
 		2. [ASCII/Hex/Base64](http://www.asciitohex.com)
+	2. wireless_bcm94352...command (see Repo)
+		1. CC prompt
 
 **BCM94352 5 GHz/Handoff Patch (10.12+)**  
 Credit: the-darkvoid 
