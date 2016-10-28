@@ -62,11 +62,11 @@ Select one method
 2.	kext edit/Info.plist, see [Guide] airport_pcie-hm_plist_edits.pdf above
 3.	dsdt edits, [Guide] airport_pcie-hm_dsdt_edits.pdf above
 4.	ssdt enabler, see ssdt_arpt folder above
-5.	Clover/config.plist/ (Select 1/i or 2/ii, not both)
+5.	Clover/config.plist/ 
 	1.	ACPI/DSDT/Fixes (supported device_ids)
-		1.	AddDTGP_0001/YESFixAirport_4000/YES
+		1.	AddDTGP_0001/YES
 		2.	FixAirport_4000/YES
-	2.	Devices/FakeID/0x0 (supported device_ids) 
+	2.	Devices/FakeID/0x43a014e4 (supported device_ids) 
 
 **BCM94352 Country Code**  
 Select 1 or 2, not both
@@ -79,7 +79,7 @@ Select 1 or 2, not both
 		2. [ASCII/Hex/Base64](http://www.asciitohex.com)
 
 **BCM94352 5 GHz/Handoff Patch (10.12+)**  
-Credit: the-darkvoid  
+Credit: the-darkvoid 
 
 1. Clover/kext patch
    1. Download [config-bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/config-bcm94352-120.plist.zip) (select View Raw)
