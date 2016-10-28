@@ -66,7 +66,7 @@ Select one method
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YES
 		2.	FixAirport_4000/YES
-	2.	Devices/FakeID/0x43a014e4 (supported device_ids) 
+	2.	Devices/FakeID/0x0 (supported device_ids) 
 
 **Country Code**  (10.12/10.11/10.10 - all versions) 
 
