@@ -78,6 +78,13 @@ Select 1 or 2, not both
 		1. edit 5GHz-US/Replace/55 53 (US) to xx xx (CC)
 		2. [ASCII/Hex/Base64](http://www.asciitohex.com)
 
+**BCM94352 5 GHz/Handoff Patch (10.12+)**  
+Credit: the-darkvoid  
+
+1. Clover/kext patch
+   1. Download [config-bcm94352-...](https://github.com/toleda/wireless_half-mini/blob/master/config-bcm94352-120.plist.zip) (select View Raw)
+	2. Paste 3 Patches to config.plist/KernelAndKextPatches/KextsToPatch
+
 **BCM94352 5 GHz/Handoff Patch (10.11+)**  
 Credit: Dokterdok, the-darkvoid, Sebinouse  
 Select 1 or 2, not both
