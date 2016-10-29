@@ -59,10 +59,14 @@ Select one method
 1. kext enabler, see FakePCIID for BCM94352
 	1. README [FakePCIID -- RehabMan](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 	2. Download [FakePCIID -- RehabMan](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads)
-2.	kext edit/Info.plist, see [Guide] airport_pcie-hm_plist_edits.pdf above
-3.	dsdt edits, [Guide] airport_pcie-hm_dsdt_edits.pdf above
-4.	ssdt enabler, see ssdt_arpt folder above
-5.	Clover/config.plist/ (10.12, not working)
+	3. Install:
+		1. FakePCIID.kext
+		2. FakePCIID_Broadcom_WiFi.kext
+2.	kext edit/Info.plist, see [Guide] airport-pcie-hm-plist-edits .pdf above
+3.	dsdt edits, [Guide] airport-pcie-hm-dsdt-edits.pdf above
+4.	ssdt enabler, see ssdt_enabler folder (repo)
+	1.	94352, see ssdt_arpt folder (repo)
+5.	Clover/config.plist/ **(10.12+, not working)**
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YES
 		2.	FixAirport_4000/YES
