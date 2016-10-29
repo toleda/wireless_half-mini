@@ -62,7 +62,7 @@ Select one method
 2.	kext edit/Info.plist, see [Guide] airport_pcie-hm_plist_edits.pdf above
 3.	dsdt edits, [Guide] airport_pcie-hm_dsdt_edits.pdf above
 4.	ssdt enabler, see ssdt_arpt folder above
-5.	Clover/config.plist/ 
+5.	Clover/config.plist/ (10.12, not working)
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YES
 		2.	FixAirport_4000/YES
