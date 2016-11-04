@@ -56,16 +56,21 @@ See [Guide] airport half mini details.pdf
 **Airport Injection Methods/Enable WiFi**  
 Select one method
 
-1. kext enabler, see FakePCIID for BCM94352
-	1. README [FakePCIID -- RehabMan](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
+1. kext enabler, see FakePCIID **(10.12+, not working)**
+	1. All supported WiFi cards (includes 94352)
+	2. README [FakePCIID -- RehabMan](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 	2. Download [FakePCIID -- RehabMan](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads)
 	3. Install:
 		1. FakePCIID.kext
 		2. FakePCIID_Broadcom_WiFi.kext
 2.	kext edit/Info.plist, see [Guide] airport-pcie-hm-plist-edits .pdf above
+	3. 94352, see config-bcm94352-120.plist
+		4. 10.11-BCM94352-0x43b114e4-Info.plist-bpresles
+		2.	Paste patch to config.plist/KernelAndKextPatches/KextsToPatch
 3.	dsdt edits, [Guide] airport-pcie-hm-dsdt-edits.pdf above
 4.	ssdt enabler, see ssdt_enabler folder (repo)
 	1.	94352, see ssdt_arpt folder (repo)
+		2. Verify IOReg/RP0x (wifi device name)
 5.	Clover/config.plist/ **(10.12+, not working)**
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YES
