@@ -53,14 +53,13 @@ See [Guide] airport half mini details.pdf
 1. BCM943352 HMB/AzureWave AW-CE123H supports both Airport and Bluetooth 4.0
 2. BCM943225 HMB supports both Airport and Bluetooth 3.0
 
-**Airport Injection Methods/Enable WiFi**  
-Select one method
+**Airport Injection Methods/Enable WiFi**  (10.12/10.11/10.10 - all versions, select one method, note: 94352, 5 GHz patch required, see below)
 
-1. kext enabler, see FakePCIID **(10.12+, not working)**
+1. kext enabler, see FakePCIID **(10.12 working, use 2016-1115 or newer)**
 	1. All supported WiFi cards (includes 94352)
 	2. README [FakePCIID -- RehabMan](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 	2. Download [FakePCIID -- RehabMan](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads)
-	3. Install:
+	3. Install (2016-1115 or newer):
 		1. FakePCIID.kext
 		2. FakePCIID_Broadcom_WiFi.kext
 2.	kext edit/Info.plist, see [Guide] airport-pcie-hm-plist-edits .pdf above
