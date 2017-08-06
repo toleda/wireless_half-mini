@@ -1,10 +1,11 @@
 ![alt text](https://github.com/toleda/wireless_half-mini/blob/master/wifi.jpeg)
 # wireless_half-mini
-**OS X Airport Half Mini (WiFi and Bluetooth)**
+**macOS Airport Half Mini (WiFi and Bluetooth)**
 
 **Updates**
 
-1. 10/26/16 - 10.12 Support, add
+1. 8/6/17 - ssdt_enabler (folder) deprecated
+2. 10/26/16 - 10.12 Support, add
 	1. 	config-bcm94352-120.plist
 2. 10/7/15 - toledaARPT deprecated
 2. 7/23/15 - 10.11 Update, adds
@@ -67,9 +68,8 @@ See [Guide] airport half mini details.pdf
 		4. 10.11-BCM94352-0x43b114e4-Info.plist-bpresles
 		2.	Paste patch to config.plist/KernelAndKextPatches/KextsToPatch
 3.	dsdt edits, [Guide] airport-pcie-hm-dsdt-edits.pdf above
-4.	ssdt enabler, see ssdt_enabler folder (repo)
-	1.	94352, see ssdt_arpt folder (repo)
-		2. Verify IOReg/RP0x (wifi device name)
+4.	ssdt/94352, see ssdt_arpt folder (repo)
+	1.	Verify IOReg/RP0x (wifi device name)
 5.	Clover/config.plist/ **(10.12+, not working)**
 	1.	ACPI/DSDT/Fixes (supported device_ids)
 		1.	AddDTGP_0001/YES
